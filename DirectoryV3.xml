@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <trees>
+     <tree path="/src" title="源代码" extension="" presentableText="" tooltipTitle="" icon="" textColor=""
+           backgroundColor=""/>
+     <tree path="/src/api" title="接口函数"/>
+     <tree path="/src/assets" title="资源文件"/>
+     <tree path="/src/components" title="公共组件"/>
+     <tree path="/src/mock" title="模拟接口"/>
+     <tree path="/src/store" title="状态管理"/>
+     <tree path="/src/views" title="网页" extension="" presentableText="" tooltipTitle="" icon="" textColor=""
+           backgroundColor=""/>
+     <tree path="/src/utils" title="工具函数"/>
+     <tree path="/src/views/home" title="主页"/>
+     <tree path="/src/utils/api" title="接口" extension="" presentableText="" tooltipTitle="" icon="" textColor=""
+           backgroundColor=""/>
+    <tree path="/src/utils/mock" title="模拟接口" extension="" presentableText="" tooltipTitle="" icon="" textColor=""
+          backgroundColor=""/>
+    <tree path="/src/utils/store" title="状态管理"/>
+    <tree path="/src/views/test" title="测试页"/>
+    <tree path="/dist" title="编译输出"/>
+    <tree path="/public" title="公共文件"/>
+    <tree path="/src/views/home/components" title="主页组件"/>
+    <tree path="/src/views/home/layout" title="主页布局"/>
+    <tree path="/src/views/home/home-index.vue" title="主页代码"/>
+    <tree path="/src/views/home/layout/nav" title="左侧边栏布局" extension="" presentableText="" tooltipTitle="" icon=""
+          textColor="" backgroundColor=""/>
+    <tree path="/src/views/home/layout/content" title="右侧内容布局"/>
+    <tree path="/src/views/home/layout/home-content.vue" title="右侧内容组件" extension="" presentableText=""
+          tooltipTitle="" icon="" textColor="" backgroundColor=""/>
+    <tree path="/src/views/home/layout/home-nav.vue" title="左侧边栏组件" extension="" presentableText=""
+          tooltipTitle="" icon="" textColor="" backgroundColor=""/>
+    <tree path="/src/views/home/components/button" title="按钮"/>
+    <tree path="/src/views/home/components/button/style" title="样式"/>
+</trees>

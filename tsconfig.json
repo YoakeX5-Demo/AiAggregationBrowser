@@ -1,0 +1,84 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@api/*": [
+        "src/utils/api/*"
+      ],
+      "@store/*": [
+        "src/utils/store/*"
+      ]
+    },
+    // 用来指定 ES 版本 ESNext : 最新版。 'ES3', 'ES5', 'ES6'/'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'ESNext'
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    // 指定要使用模块化的规范 : 'None', 'CommonJS', 'AMD', 'System', 'UMD', 'ES6'/'ES2015', 'ES2020' or 'ESNext'
+    "module": "ES2020",
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+
+    // 是否检查js代码是否符合语法规范，默认false
+    "checkJs": false,
+    // 是否移除注释，默认false
+    "removeComments":true,
+    // 是否不生成编译后文件，默认false
+    "noEmit": false,
+    // 当有错误时是否生成文件，默认false
+    "noEmitOnError": false,
+    // 是否生成sourceMap，默认false  这个文件里保存的，是转换后代码的位置，和对应的转换前的位置。有了它，出错的时候，通过断点工具可以直接显示原始代码，而不是转换后的代码。
+    "sourceMap":false,
+    // 所有的严格检查的总开关，默认false
+    "strict": true,
+    // 编译后的文件是否开启严格模式，默认false
+    "alwaysStrict": false,
+    // 不允许隐式的any，默认false(允许)
+    "noImplicitAny": false,
+    // 不允许隐式的this，默认false(允许)
+    "noImplicitThis": false,
+    // 是否严格的检查空值，默认false 检查有可能为null的地方
+    "strictNullChecks": true,
+    // 是否严格检查bind、call和apply的参数列表，默认false  检查是否有多余参数
+    "strictBindCallApply":false,
+    // 是否严格检查函数的类型，
+    "strictFunctionTypes":false,
+    // 是否严格检查属性是否初始化，默认false
+    "strictPropertyInitialization":false,
+    // 是否检查switch语句包含正确的break，默认false
+    "noFallthroughCasesInSwitch":false,
+    // 检查函数没有隐式的返回值，默认false
+    "noImplicitReturns":false,
+    // 是否检查检查未使用的局部变量，默认false
+    "noUnusedLocals":false,
+    // 是否检查未使用的参数，默认false
+    "noUnusedParameters":false,
+    // 是否检查不可达代码报错，默认false   true，忽略不可达代码 false，不可达代码将引起错误
+    "allowUnreachableCode":false,
+    // 自动生成声明文件
+    "declaration": true,
+    // 声明文件生成的目录
+    "declarationDir": "dist/types",
+
+  },
+  "include": [
+    "./.auto-imports.d.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

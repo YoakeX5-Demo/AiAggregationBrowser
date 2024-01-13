@@ -1,0 +1,52 @@
+button {
+  display: flex;
+  //对齐方式
+  align-items: center;
+  //间距
+  gap: 0.5rem;
+  //不换行
+  white-space: nowrap;
+  //悬停光标
+  cursor: pointer;
+  //文字大小
+  font-size: 0.875rem;
+  //文字对齐
+  text-align: left;
+  //宽度计算
+  box-sizing: border-box;
+  margin: 0;
+  //动效
+  transition: 0.1s;
+  //禁止元素的文字被选中
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  //原生控件
+  -webkit-appearance: none;
+  //圆角
+  border-radius: 0.5rem;
+}
+
+@media (prefers-color-scheme: light) {
+  button {
+    //悬停变色
+    &:hover {
+      background-color: #94a3b8;
+    }
+  }
+  .icon {
+    fill: #fff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  button {
+    //悬停变色
+    &:hover {
+      background-color: #777;
+    }
+  }
+  .icon {
+    fill: #fff;
+  }
+}
