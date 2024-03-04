@@ -31,4 +31,38 @@
           tooltipTitle="" icon="" textColor="" backgroundColor=""/>
     <tree path="/src/views/home/components/button" title="按钮"/>
     <tree path="/src/views/home/components/button/style" title="样式"/>
+    <tree path="/src/assets/svg" title="svg图标"/>
+    <tree path="/src/common" title="公共组件"/>
+    <tree path="/src/common/views" title="视图"/>
+    <tree path="/src/router" title="访问路由" extension="" presentableText="" tooltipTitle="" icon="" textColor=""
+          backgroundColor=""/>
+    <tree path="/src/views/login" title="登录页" extension="" presentableText="" tooltipTitle="" icon="" textColor=""
+          backgroundColor=""/>
+    <tree path="/src/views/reg" title="注册页"/>
+    <tree path="/src/utils/request.ts" title="请求函数"/>
+    <tree path="/src/views/home/components/button/home-btn-content-select.vue" title="AI选择按钮"/>
+    <tree path="/src/views/home/components/button/home-btn-nav-user-menu.vue" title="用户菜单按钮" extension=""
+          presentableText="" tooltipTitle="" icon="" textColor="" backgroundColor=""/>
+    <tree path="/src/views/home/components/button/home-btn-nav-newchat.vue" title="新聊天按钮" extension=""
+          presentableText="" tooltipTitle="" icon="" textColor="" backgroundColor=""/>
+    <tree path="/src/views/home/components/button/home-btn-nav-item.vue" title="聊天项目按钮"/>
+    <tree path="/src/views/home/components/button/home-btn-nav-closed.vue" title="侧边关闭按钮"/>
+    <tree path="/src/views/home/layout/content/home-content-content.vue" title="右侧中部内容"/>
+    <tree path="/src/views/home/layout/content/home-content-footer.vue" title="右侧尾部内容"/>
+    <tree path="/src/views/home/layout/content/home-content-header.vue" title="右侧上部内容"/>
+    <tree path="/src/views/home/layout/nav/home-nav-content.vue" title="左侧中部内容"/>
+    <tree path="/src/views/home/layout/nav/home-nav-footer.vue" title="左侧尾部内容"/>
+    <tree path="/src/views/home/layout/nav/home-nav-header.vue" title="左侧头部内容"/>
+    <tree path="/src/utils/api/gpt.ts" title="GPT接口"/>
+    <tree path="/src/utils/store/chat.ts" title="聊天状态"/>
+    <tree path="/src/utils/store/view.ts" title="视图状态"/>
+    <tree path="/src/common/views/NotFound.vue" title="404界面"/>
+    <tree path="/src/assets/svg/user.png" title="" extension="" presentableText="" tooltipTitle="" icon="" textColor=""
+          backgroundColor=""/>
+    <tree path="/src/utils/mock/api/gpt.ts" title="GPT接口"/>
+    <tree path="/src/utils/mock/api/login.json" title="登录接口"/>
+    <tree path="/src/utils/mock/api/test.ts" title="测试接口"/>
+    <tree path="/src/App.vue" title="程序入口"/>
+    <tree path="/src/style.css" title="主样式"/>
+    <tree path="/src/main.ts" title="主函数"/>
 </trees>

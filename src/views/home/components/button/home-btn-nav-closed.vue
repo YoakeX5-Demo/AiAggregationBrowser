@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { storeNav } from "../../../../utils/store/view.ts";
+import { storeNav } from "@store/view.ts";
 
 // 侧边栏状态
 const navClosed = storeToRefs(storeNav()).closed;

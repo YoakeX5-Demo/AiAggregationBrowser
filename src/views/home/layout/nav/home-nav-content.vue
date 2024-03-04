@@ -4,7 +4,7 @@ import { BtnB } from "../../components/button";
 
 <template>
   <!--侧边栏中部内容-->
-  <div class="flex flex-col h-full w-full overflow-y-auto">
+  <div>
     <!--今日-->
     <div class="flex flex-col">
       <span class="text-xs p-2 gap-2 whitespace-nowrap text-stone-600"

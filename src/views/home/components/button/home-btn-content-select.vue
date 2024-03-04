@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { storeChat } from "../../../../utils/store/chat.ts";
+import { storeChat } from "@store/chat.ts";
 
 // 选项
 const options = [
   {
     value: "0",
-    label: "ChatGLM（问答）",
+    label: "ChatGLM（聊天）",
   },
   {
     value: "1",
-    label: "ChatGPT（问答）",
+    label: "ChatGPT（代码）",
   },
   {
     value: "2",
@@ -26,7 +26,7 @@ const select: Ref<string> = storeToRefs(storeChat()).select;
 </script>
 
 <template>
-  <div class="h-15 w-50">
+  <div class="h-15 w-55">
     <el-select v-model="select" class="m-2" size="large">
       <el-option
         v-for="item in options"

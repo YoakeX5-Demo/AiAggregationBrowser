@@ -1,15 +1,25 @@
 import request from "../request.ts";
 
-export const getResponse = (input: string) => {
+export const getResponseChatGLM = (input: string) => {
   return request({
-    url: "/getResponse",
+    url: "/ai/getResponse?aiSelect=0&problem=" + input,
     method: "post",
-    data: {
-      prompt: input,
-      history: [],
-      max_length: 128,
-      top_p: 0.7,
-      temperature: 0.95,
-    },
+    data: {},
+  });
+};
+
+export const getResponseChatGPT = (input: string) => {
+  return request({
+    // url: "https://ngedlktfticp.cloud.sealos.io/v1/chat/completions",
+    url: "/ai/getResponse?aiSelect=1&problem=" + input,
+    method: "post",
+    data: {},
+  });
+};
+export const getResponseStableDiffusion = (input: string) => {
+  return request({
+    url: "/ai/getResponse?aiSelect=3&problem=" + input,
+    method: "post",
+    data: {},
   });
 };

@@ -22,11 +22,11 @@ const navClosed = storeToRefs(storeNav()).closed;
       class="h-full bg-slate-3 dark:bg-zinc-900 transition-all flex flex-col flex-1 box-border p-3 overflow-hidden"
     >
       <!--首部-->
-      <nav-header />
+      <nav-header class="flex flex-col" />
       <!--中部-->
-      <nav-content />
+      <nav-content class="flex flex-col h-full w-full overflow-y-auto" />
       <!--底部-->
-      <nav-footer />
+      <nav-footer class="flex flex-col" />
     </div>
     <!--侧边栏收起按钮-->
     <btn-nav-closed />

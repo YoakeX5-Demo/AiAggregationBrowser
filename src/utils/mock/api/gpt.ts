@@ -13,6 +13,6 @@
 export default {
   getResponse: () => ({
     result: true,
-    data: "success",
+    data: "你好",
   }),
 };

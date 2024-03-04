@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-import AppHome from "./views/home/home-index.vue";
-import Test from "./views/test/test-index.vue";
-
 // 暗黑模式
 function setDark(is_dark: boolean) {
   if (is_dark) {
@@ -26,8 +23,7 @@ mediaQueryList.addEventListener("change", (evt) => {
 
 <template>
   <div class="flex h-full w-full">
-    <!--主页-->
-    <AppHome />
-    <Test />
+    <!--路由出口-->
+    <router-view></router-view>
   </div>
 </template>

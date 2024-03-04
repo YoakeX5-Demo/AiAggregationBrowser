@@ -11,25 +11,31 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 import svgLoader from "vite-svg-loader";
 // path
 import * as path from "path";
+// 打包单文件
+import { viteSingleFile } from "vite-plugin-singlefile";
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "",
   server: {
     proxy: {
-      "/api": {
-        target: "http://localhost:8000/",
+      "/ai": {
+        target: "http://localhost:8888/ai",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
+        rewrite: (path) => path.replace(/^\/ai/, ""),
       },
     },
   },
   resolve: {
     alias: {
       // 这里就是需要配置resolve里的别名
+      "@src": path.join(__dirname, "src"),
       "@api": path.join(__dirname, "src/utils/api"),
       "@store": path.join(__dirname, "src/utils/store"),
     },
   },
   plugins: [
+    // 打包单文件
+    viteSingleFile(),
     // vue
     vue(),
     // 原子化CSS
@@ -54,7 +60,7 @@ export default defineConfig({
       // 饿了么UI
       resolvers: [ElementPlusResolver()],
       // 自动导入的组件位置
-      dirs: ["src/components"],
+      dirs: ["src/common"],
     }),
   ],
 });

@@ -4,7 +4,7 @@ import { BtnA } from "../../components/button";
 
 <template>
   <!--侧边栏首部内容-->
-  <div class="flex flex-col">
+  <div>
     <btn-a />
     <br />
   </div>
