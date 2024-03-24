@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 // 暗黑模式
+import { userStore } from "@store/user.ts";
+import { userChatHistorical } from "@api/user.ts";
+
 function setDark(is_dark: boolean) {
   if (is_dark) {
     document.documentElement.classList.remove("light");
@@ -11,13 +14,12 @@ function setDark(is_dark: boolean) {
 }
 
 onMounted(() => {
-  const is_dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  setDark(is_dark);
-});
-const mediaQueryList = matchMedia("(prefers-color-scheme: dark)");
-mediaQueryList.addEventListener("change", (evt) => {
-  const theme = evt.matches ? "dark" : "light";
-  setDark(theme === "dark");
+  const mediaQueryList = matchMedia("(prefers-color-scheme: dark)");
+  setDark(mediaQueryList.matches);
+  mediaQueryList.addEventListener("change", (evt) => {
+    const theme = evt.matches ? "dark" : "light";
+    setDark(theme === "dark");
+  });
 });
 </script>
 

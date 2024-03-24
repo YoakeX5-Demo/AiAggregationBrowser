@@ -19,12 +19,14 @@
     "marked": "^12.0.0",
     "particles.vue3": "^1.22.0",
     "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
     "vue": "^3.3.11",
     "vue-axios": "^3.5.2",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@types/mockjs": "^1.0.10",
+    "@types/vue": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^6.17.0",
     "@typescript-eslint/parser": "^6.17.0",
     "@unocss/preset-uno": "^0.58.0",

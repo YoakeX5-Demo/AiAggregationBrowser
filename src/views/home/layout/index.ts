@@ -1,2 +1,2 @@
-export { default as Nav } from "./home-nav.vue";
-export { default as Content } from "./home-content.vue";
+export { default as Left } from "./home-left.vue";
+export { default as Right } from "./home-right.vue";

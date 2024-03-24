@@ -1,11 +1,12 @@
 <script lang="ts" setup>
-import { storeNav } from "@store/view.ts";
+// 引入状态管理
+import { viewStore } from "@store/view.ts";
 
-// 侧边栏状态
-const navClosed = storeToRefs(storeNav()).closed;
-const navClosedActive = storeToRefs(storeNav()).active;
+// 处理侧边栏状态
+const navClosed = storeToRefs(viewStore()).closed;
+const navClosedActive = storeToRefs(viewStore()).active;
 
-// 气泡框文本
+// 处理气泡框文本
 const popoverText = computed(() => {
   return navClosed.value ? "打开侧边" : "关闭侧边";
 });

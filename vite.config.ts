@@ -19,9 +19,14 @@ export default defineConfig({
   server: {
     proxy: {
       "/ai": {
-        target: "http://localhost:8888/ai",
+        target: "http://s0.i-mc.cn:21041/ai",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/ai/, ""),
+      },
+      "/user": {
+        target: "http://s0.i-mc.cn:21041/user",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/user/, ""),
       },
     },
   },

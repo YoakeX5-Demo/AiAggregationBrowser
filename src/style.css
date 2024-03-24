@@ -10,7 +10,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/*白天主题*/
 @media (prefers-color-scheme: light) {
   :root {
     background-color: #fff;
@@ -19,8 +19,16 @@
   .icon path {
     fill: #475569;
   }
-}
 
+  a {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .markdown-body {
+
+    color: rgba(0, 0, 0, 0.87);
+  }
+}
+/*黑夜主题*/
 @media (prefers-color-scheme: dark) {
   :root {
     background-color: #343541;
@@ -28,6 +36,12 @@
 
   .icon path {
     fill: #dadfe5;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.87);
+  }
+  .markdown-body {
+    color: rgba(255, 255, 255, 0.87);
   }
 }
 
